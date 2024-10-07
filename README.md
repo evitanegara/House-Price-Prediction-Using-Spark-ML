@@ -14,7 +14,7 @@ In the rapidly growing real estate market, accurate house price predictions are 
 This project involved several key steps to predict house prices using the Pakistan House 2023 dataset:
 - **Data Import and Initialization**: Set up Spark for local execution and imported necessary libraries such as NumPy, Matplotlib, and PySpark.
 **- Data Preprocessing:**
-- **Data Cleaning:** Removed unnecessary characters and converted string columns into appropriate integer types.
+  - **Data Cleaning**:  Removed unnecessary characters and converted string columns into appropriate integer types.
 - **Handling Missing and Inconsistent Data**: Applied the dropna method to remove rows with missing values and ensured consistent data across relevant columns.
 - **Feature Encoding**: Transformed categorical variables (e.g., property type, city, and purpose) into numerical form using StringIndexer and OneHotEncoder.
 -** Handling Outliers**: Applied the Interquartile Range (IQR) method to detect and remove outliers in continuous variables.
