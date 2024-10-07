@@ -4,7 +4,8 @@ In the rapidly growing real estate market, accurate house price predictions are 
 
 # Porject Objective
 - The goal of this project is to predict house prices using the Pakistan House 2023.
-- The dataset contains eight columns, with house price as the dependent variable and seven other features as independent variables. [Access the Dataset here] (https://www.kaggle.com/datasets/manjitbaishya001/house-prices-2023)
+- The dataset contains eight columns, with house price as the dependent variable and seven other features as independent variables. [Access the Dataset here](https://www.kaggle.com/datasets/manjitbaishya001/house-prices-2023)
+
 
 - A linear regression model was implemented using PySpark's machine learning library to predict house prices.
 - Evaluation metrics, such as MAE, RMSE, and MSE, were used to assess the model's performance on both the training and test datasets.
