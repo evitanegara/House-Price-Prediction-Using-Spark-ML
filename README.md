@@ -20,7 +20,6 @@ This project involved several key steps to predict house prices using the Pakist
 - **Handling Outlier**: Applied the Interquartile Range (IQR) method to detect and remove outliers in continuous variables.
 - **Standard Scaller**: Scaled the feature set using StandardScaler to normalize features, ensuring that each feature contributes equally to model training.
 - **Train-Test Split**: Divided the dataset into 70% for training and 30% for testing to evaluate model performance on unseen data.
-
 **- Building Model and Evaluation**
   - Building a linear regression model using PySpark.
   - Evaluated performance using metrics such as MAE, RMSE, and MSE for both training and test data.
