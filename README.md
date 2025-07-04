@@ -53,6 +53,10 @@ The dataset underwent a thorough preprocessing pipeline, including type conversi
 - Detected and removed outliers using the Interquartile Range (IQR) method
 - Reduced dataset size to 85,344 rows after outlier removal
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1bd5568d-cc9d-4187-ab8e-708b5bf7d2bc" width="500"/>
+</p>
+
 ### Feature Engineering
 - Assembled all numerical and encoded features into a single vector using VectorAssembler
 - Standardized the assembled feature vector using StandardScaler
@@ -67,12 +71,50 @@ The dataset underwent a thorough preprocessing pipeline, including type conversi
   - Root Mean Squared Error (RMSE)
   - Mean Squared Error (MSE)
 - Visualized predicted vs. actual house prices using scatter plots for both training and test sets
+## Model Performance Summary
+
+| Metric | Train Set           | Test Set            |
+|--------|---------------------|---------------------|
+| MAE    | 3,684,701.95        | 3,674,413.53        |
+| RMSE   | 4,773,656.36        | 4,758,605.25        |
+| MSE    | 22,813,580,048,875.66 | 22,644,323,927,299.20 |
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/649f79da-61a4-4f4e-ae8f-f909c4282c72" width="500"/>
+</p>
+
+## Highlights
+
+- PySpark’s Linear Regression model captured a clear linear relationship between actual and predicted house prices
+
+- Mean Absolute Error (MAE) was consistent across datasets  
+  Train MAE: 3,684,701.95  
+  Test MAE: 3,674,413.53
+
+- Root Mean Squared Error (RMSE) showed nearly identical values  
+  Train RMSE: 4,773,656.36  
+  Test RMSE: 4,758,605.25
+
+- Mean Squared Error (MSE) remained high for both sets  
+  Train MSE: 22.81 trillion  
+  Test MSE: 22.64 trillion
+
+- Scatter plots of predicted vs. actual values displayed a clear positive linear trend, showing the model successfully captured general pricing behavior
 
 
+## Key Takeaways
+- Trend Detection Over Precision
+The model performs well in identifying pricing directionality, but its relatively high error metrics reveal limitations in making precise individual predictions, especially for high value properties.
 
+- Feature Scope Constrains Accuracy
+Excluding influential variables such as location (due to high cardinality) limited the model’s ability to capture spatial and market-level variation, critical drivers in real estate pricing.
 
+- IQR-Based Outlier Removal Boosted Stability
+Eliminating extreme values in price and area_in_marla improved overall model stability, reducing noise and enabling better generalization to unseen data.
 
+- Standardization Supported Balanced Learning
+Applying StandardScaler ensured that all numeric features contributed proportionally to the regression, enhancing model convergence and interpretability.
 
-![image](https://github.com/user-attachments/assets/870c5007-7456-48e4-b860-257e42d0c612)
+- No Overfitting Observed
+The minimal gap between training and testing performance suggests strong generalization, a key strength for deploying this model in real-world scenarios.
 
-![image](https://github.com/user-attachments/assets/cd6a81f4-72e0-4d11-ad6f-5fabf55698cb)
