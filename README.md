@@ -54,7 +54,7 @@ The dataset underwent a thorough preprocessing pipeline, including type conversi
 - Reduced dataset size to 85,344 rows after outlier removal
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1bd5568d-cc9d-4187-ab8e-708b5bf7d2bc" width="500"/>
+  <img src="https://github.com/user-attachments/assets/1bd5568d-cc9d-4187-ab8e-708b5bf7d2bc" width="800"/>
 </p>
 
 ### Feature Engineering
@@ -80,7 +80,7 @@ The dataset underwent a thorough preprocessing pipeline, including type conversi
 | MSE    | 22,813,580,048,875.66 | 22,644,323,927,299.20 |
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/649f79da-61a4-4f4e-ae8f-f909c4282c72" width="500"/>
+  <img src="https://github.com/user-attachments/assets/649f79da-61a4-4f4e-ae8f-f909c4282c72" width="800"/>
 </p>
 
 ## Highlights
@@ -117,4 +117,7 @@ Applying StandardScaler ensured that all numeric features contributed proportion
 
 - No Overfitting Observed
 The minimal gap between training and testing performance suggests strong generalization, a key strength for deploying this model in real-world scenarios.
+
+## Contact
+For any questions or inquiries, please contact evitanegara@gmail.com
 
