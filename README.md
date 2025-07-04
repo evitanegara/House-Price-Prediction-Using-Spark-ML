@@ -71,13 +71,8 @@ The dataset underwent a thorough preprocessing pipeline, including type conversi
   - Root Mean Squared Error (RMSE)
   - Mean Squared Error (MSE)
 - Visualized predicted vs. actual house prices using scatter plots for both training and test sets
+  
 ## Model Performance Summary
-
-| Metric | Train Set           | Test Set            |
-|--------|---------------------|---------------------|
-| MAE    | 3,684,701.95        | 3,674,413.53        |
-| RMSE   | 4,773,656.36        | 4,758,605.25        |
-| MSE    | 22,813,580,048,875.66 | 22,644,323,927,299.20 |
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/649f79da-61a4-4f4e-ae8f-f909c4282c72" width="800"/>
